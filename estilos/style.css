@@ -85,7 +85,18 @@ main {
     border-radius: 10px;
     box-shadow: 2px 2px 3 px rgba(0, 0, 0, 0.356);
 }
+section{
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px;
+}
 
+.destaques {
+    background-color: #CFB53B;
+    text-align: justify;
+    
+}
 /* Aqui consigo fazer o media query dentro do proprio CSS - configurado pra tela de 500px, tera o comportamento que for colocado aqui nessa tag
 
 @media screen and (max-width: 500px) {
