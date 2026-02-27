@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+header, header > nav {
+    flex-flow: column nowrap; /*o cabeçalho e o menu ficam em colunas*/
+}
+
+header > h1 {
+    flex-basis: 50px; /*aqui é a distancia do h1 até o proximo item, no caso, o menu. */
+}
+
+header > nav > a {
+    width: 90vw;
+}

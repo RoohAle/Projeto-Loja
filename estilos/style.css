@@ -26,13 +26,14 @@ header {
 }
 
 header > h1 {
-    border: 1px dotted black;
-    flex: 0 0 200px;
+    /*border: 1px dotted black;*/
+    flex: 0 0 200px; /*primeiro diz que nao cresce, o segundo não encolhe e terceiro mantem o tamnho dos itens nessa dimensão*/
+    text-shadow:  2px 2px rgba(0, 0, 0, 0.445);
 }
 
 header > nav {
-    border: 1px dotted black;
-
+    /*border: 1px dotted black;*/
+    text-shadow:  2px 2px rgba(0, 0, 0, 0.445);
     display: flex;/*deixa os menus flexiveis */
     flex-flow: row wrap;
     justify-content: flex-end; /*sempre deixa eles no fim da box*/
@@ -63,3 +64,11 @@ main {
     box-shadow: 2px 2px 3 px rgba(0, 0, 0, 0.356);
 }
 
+/* Aqui consigo fazer o media query dentro do proprio CSS - configurado pra tela de 500px, tera o comportamento que for colocado aqui nessa tag
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: red;
+    }
+}
+*/ 
