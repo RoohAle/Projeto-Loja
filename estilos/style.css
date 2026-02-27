@@ -1,5 +1,23 @@
 @charset "UTF-8";
 
+
+:root { /* aqui coloca pra tudo.... BIZUUUUU*/
+    --cor0: #FFCC33;
+    --cor1: #CFB53B;
+    --cor2: #D4AF37;
+    --cor3: #CBA135;
+    --cor4: #1B1B1B;
+    
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Sriracha", cursive;
+}
+.sriracha-regular {
+  font-family: "Sriracha", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -7,16 +25,16 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-destaque);
     font-size: 1em;
-    background-color: rgb(179, 175, 175);
+    background-image: linear-gradient(to bottom, var(--cor0), white);
     height: 100vh;
     width: 100vw;
 }
 
 header {
-    background-color: gray;
-    color: white;
+    background-image: linear-gradient(to left, var(--cor0), white);
+    color: rgb(0, 0, 0);
     padding: 10px;
 
     display: flex; /* todos os elementos aqui dentro ja se estabilizam dentro da linha*/
@@ -29,6 +47,7 @@ header > h1 {
     /*border: 1px dotted black;*/
     flex: 0 0 200px; /*primeiro diz que nao cresce, o segundo não encolhe e terceiro mantem o tamnho dos itens nessa dimensão*/
     text-shadow:  2px 2px rgba(0, 0, 0, 0.445);
+    font-family: var(--fonte-destaque)
 }
 
 header > nav {
@@ -39,7 +58,7 @@ header > nav {
 }
 
 header > nav > a {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.322);
     color: white;
     padding: 10px;
     margin: 5px;
