@@ -18,15 +18,43 @@ header {
     background-color: gray;
     color: white;
     padding: 10px;
+
+    display: flex; /* todos os elementos aqui dentro ja se estabilizam dentro da linha*/
+    flex-flow: row wrap;
+    justify-content: space-between; /* os itens ficam um no comeco e outro no fim, havendo + de 2, eles vao ocupar o espaço central com o mesmo afastamento de um e do outro*/
+    align-items: center; /*os itens dentro desse container se ajustaram no meio deste bloco*/
 }
 
 header > h1 {
     border: 1px dotted black;
+    flex: 0 0 200px;
 }
 
 header > nav {
     border: 1px dotted black;
+
+    display: flex;/*deixa os menus flexiveis */
+    flex-flow: row wrap;
+    justify-content: flex-end; /*sempre deixa eles no fim da box*/
 }
+
+header > nav > a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header > nav > a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .5s;
+
+}
+
 main {
     background-color: white;
     margin: 10px;
