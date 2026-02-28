@@ -34,3 +34,8 @@ span#burguer:hover {
     color: black;
     cursor: pointer;
 }
+#section1{
+    display: grid;
+    grid-template-columns: 1fr; /* 1 produto por linha */
+    justify-items: center;
+}
